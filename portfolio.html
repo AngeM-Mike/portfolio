@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nebie Ange Michel — Design Graphique &amp; Développement Web</title>
+<meta name="description" content="Portfolio de Nebie Ange Michel — Design graphique, identité visuelle, création de sites web et communication digitale.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#home" class="brand">
+      <span class="brand-mark">NAM</span>
+      <span class="brand-name">Ange&nbsp;Michel</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#services" class="nav-link">Ce que je fais</a>
+      <a href="#portfolio" class="nav-link">Réalisations</a>
+      <a href="#competences" class="nav-link">Compétences</a>
+      <a href="#apropos" class="nav-link">À propos</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-pill btn-light header-cta">Me contacter</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <svg class="hero-grid" viewBox="0 0 1200 800" preserveAspectRatio="none"><defs><pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(157,192,234,0.09)" stroke-width="1"/></pattern></defs><rect width="1200" height="800" fill="url(#grid)"/></svg>
+      <div class="hero-orb hero-orb--a"></div>
+      <div class="hero-orb hero-orb--b"></div>
+      <svg class="hero-mark" viewBox="0 0 480 480" aria-hidden="true">
+        <polygon points="240,40 440,160 440,360 240,460 40,360 40,160" fill="none" stroke="rgba(157,192,234,0.35)" stroke-width="1.5"/>
+        <polygon points="240,110 380,190 380,330 240,400 100,330 100,190" fill="none" stroke="rgba(157,192,234,0.55)" stroke-width="1.5"/>
+        <circle cx="240" cy="250" r="46" fill="none" stroke="#9DC0EA" stroke-width="2"/>
+        <circle cx="240" cy="250" r="4" fill="#9DC0EA"/>
+      </svg>
+    </div>
+
+    <div class="wrap hero-inner">
+      <p class="eyebrow" data-reveal>Design graphique · Identité visuelle · Développement web</p>
+      <h1 class="hero-title" data-reveal>
+        Donner une image <span class="text-accent">forte</span><br>
+        à vos idées &amp; vos marques.
+      </h1>
+      <p class="hero-text" data-reveal>
+        Étudiant ingénieur STIC à l'ESI / INP‑HB (Côte d'Ivoire), je conçois des logos,
+        des identités visuelles et des sites web pensés pour donner à chaque projet
+        une présence claire, professionnelle et mémorable.
+      </p>
+      <div class="hero-actions" data-reveal>
+        <a href="#portfolio" class="btn btn-pill btn-accent">Voir mes réalisations</a>
+        <a href="#contact" class="btn btn-pill btn-outline">Discuter d'un projet</a>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="hero-infobar" data-reveal>
+        <div class="info-item">
+          <span class="info-label">Basé à</span>
+          <span class="info-value">Abidjan, Côte d'Ivoire</span>
+        </div>
+        <span class="info-divider" aria-hidden="true"></span>
+        <div class="info-item">
+          <span class="info-label">Spécialités</span>
+          <span class="info-value">Logos · Sites web · Communication</span>
+        </div>
+        <span class="info-divider" aria-hidden="true"></span>
+        <div class="info-item">
+          <span class="info-label">Disponibilité</span>
+          <span class="info-value">Ouvert aux nouveaux projets</span>
+        </div>
+        <a href="#contact" class="btn btn-pill btn-accent infobar-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          Contact
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <p class="section-eyebrow" data-reveal>Ce que je fais</p>
+      <h2 class="section-title" data-reveal>Du logo au site web, une image cohérente de bout en bout</h2>
+      <p class="section-sub" data-reveal>Je combine design graphique, développement web et communication pour concevoir des solutions visuelles et digitales adaptées à vos besoins.</p>
+
+      <div class="services-grid">
+        <article class="service-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L12 16.9 6.4 20.1l1.4-6.3-4.8-4.3 6.4-.6L12 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Logos &amp; identités visuelles</h3>
+          <p>Création de logos et de chartes graphiques pour donner à une marque une image cohérente, professionnelle et mémorable.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9h18M8 21h8M12 18v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Sites web pour entreprises</h3>
+          <p>Sites vitrines, sites de présentation et catalogues pour présenter une activité, des services, des produits et les moyens de contact.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="13" y="3" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="13" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="13" y="13" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3>Supports de communication</h3>
+          <p>Affiches, kakemonos, visuels promotionnels et contenus digitaux pour vos réseaux sociaux et vos événements.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 16l4-8 4 5 3-4 5 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3>Visuels produits &amp; packaging</h3>
+          <p>Conception de visuels produits et de supports de packaging pour valoriser une marque et ses produits.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C7 2 3 6 3 11c0 4 3.5 7.5 8 9.5.2.1.4.1.6 0C16 18.5 21 14.5 21 11c0-5-4-9-9-9z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="11" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3>Expérience &amp; présentation</h3>
+          <p>Réflexion sur l'expérience et la présentation d'un projet pour proposer des solutions modernes et adaptées à son public.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section section--tint" id="portfolio">
+    <div class="wrap">
+      <p class="section-eyebrow" data-reveal>Réalisations</p>
+      <h2 class="section-title" data-reveal>Une sélection de logos &amp; de sites web</h2>
+      <p class="section-sub" data-reveal>
+        Une sélection de mes créations visuelles et graphiques, avec un focus sur les identités visuelles et les projets de marque.
+      </p>
+
+      <div class="filter-bar" data-reveal role="tablist" aria-label="Filtrer les réalisations">
+        <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">Tout voir</button>
+        <button class="filter-btn" data-filter="logo" role="tab" aria-selected="false">Logos</button>
+        <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Sites web</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid" data-reveal></div>
+    </div>
+  </section>
+
+  <!-- COMPETENCES -->
+  <section class="section" id="competences">
+    <div class="wrap split">
+      <div class="split-visual" data-reveal>
+        <div class="tool-orbit">
+          <div class="tool-orbit-ring"></div>
+          <div class="tool-orbit-core">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 17l6-6-6-6M12 19h8" stroke="#F6F8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="tool-chip tool-chip--1">Photoshop</span>
+          <span class="tool-chip tool-chip--2">Illustrator</span>
+          <span class="tool-chip tool-chip--3">Figma</span>
+          <span class="tool-chip tool-chip--4">HTML / CSS</span>
+          <span class="tool-chip tool-chip--5">React</span>
+          <span class="tool-chip tool-chip--6">Python</span>
+          <span class="tool-chip tool-chip--7">Git &amp; GitHub</span>
+          <span class="tool-chip tool-chip--8">Canva</span>
+        </div>
+      </div>
+
+      <div class="split-content" data-reveal>
+        <p class="section-eyebrow">Compétences &amp; outils</p>
+        <h2 class="section-title section-title--left">La création et la technologie, côte à côte</h2>
+        <p class="section-sub section-sub--left">
+          Je conçois des identités visuelles, des interfaces digitales et des expériences web cohérentes, de la
+          conception à l’hébergement. J’utilise aussi le Vibe coding pour accélérer la création de prototypes,
+          d’outils utiles et de solutions fonctionnelles en gardant un rendu propre et moderne.
+        </p>
+
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h4>Design graphique &amp; identité visuelle</h4>
+            <ul class="skill-list">
+              <li>Conception de logos, chartes graphiques et univers visuels</li>
+              <li>Maquettes UI/UX et design d’interfaces modernes</li>
+              <li>Affiches, supports de communication et visuels digitaux</li>
+              <li>Vibe coding pour prototypage rapide et itérations créatives</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h4>Développement web &amp; mise en ligne</h4>
+            <ul class="skill-list">
+              <li>Conception de sites vitrines, de landing pages et de portfolios</li>
+              <li>Intégration HTML / CSS / JavaScript avec design responsive</li>
+              <li>Déploiement, hébergement et optimisation pour un site fonctionnel</li>
+              <li>Vibe coding, prototypage rapide, automatisation et amélioration UX</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A PROPOS -->
+  <section class="section section--dark" id="apropos">
+    <div class="wrap">
+      <p class="section-eyebrow section-eyebrow--light" data-reveal>À propos</p>
+      <h2 class="section-title section-title--light" data-reveal>Ce qui me distingue</h2>
+      <p class="about-text" data-reveal>
+        Mon profil repose sur la complémentarité entre création et technologie. Je ne me limite pas à produire
+        un visuel : je cherche à comprendre le projet, son public et son objectif afin de proposer une solution
+        visuelle ou digitale cohérente avec le besoin. Je suis également responsable de la communication de la
+        <strong>Semaine de l'Industrie</strong> et de <strong>l'AEI STIC</strong> (Association des Élèves Ingénieurs
+        en STIC), où je conçois et diffuse des supports de communication pour les activités et projets étudiants.
+      </p>
+
+      <div class="stats-row" data-reveal>
+        <div class="stat">
+          <span class="stat-num">STIC</span>
+          <span class="stat-label">Étudiant ingénieur — ESI / INP‑HB</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Responsabilités communication associatives</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">8+</span>
+          <span class="stat-label">Outils &amp; technologies maîtrisés</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">CI</span>
+          <span class="stat-label">Basé en Côte d'Ivoire, ouvert à distance</span>
+        </div>
+      </div>
+
+      <div class="chip-row" data-reveal>
+        <span class="tag-chip">💻 Développement</span>
+        <span class="tag-chip">🎨 Design graphique</span>
+        <span class="tag-chip">🌐 Web</span>
+        <span class="tag-chip">📢 Communication</span>
+        <span class="tag-chip">🚀 Projets &amp; entrepreneuriat</span>
+        <span class="tag-chip">🏀 Basketball &amp; sport</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="wrap split split--reverse">
+      <div class="split-content" data-reveal>
+        <p class="section-eyebrow">Contact</p>
+        <h2 class="section-title section-title--left">Un projet en tête ? Parlons-en.</h2>
+        <p class="section-sub section-sub--left">
+          Je suis disponible pour collaborer avec des entreprises, marques, associations et projets qui
+          recherchent quelqu'un capable de travailler à la fois sur leur image, leur communication et leur
+          présence en ligne.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-ico">✉️</span>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=angemichel.nebie@gmail.com&su=Demande%20de%20contact" target="_blank" rel="noopener">angemichel.nebie@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact-ico">💬</span>
+            <div>
+              <span class="contact-label">WhatsApp</span>
+              <a href="https://wa.me/2250584615424" target="_blank" rel="noopener">+225 05 84 61 54 24</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact-ico">📞</span>
+            <div>
+              <span class="contact-label">Téléphone</span>
+              <a href="tel:+2250718741649">+225 07 18 74 16 49</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact-ico">🔗</span>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/AngeM-Mike" target="_blank" rel="noopener">github.com/AngeM-Mike</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="split-visual" data-reveal>
+        <div class="contact-panel">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=angemichel.nebie@gmail.com&su=Demande%20de%20contact" target="_blank" rel="noopener" class="contact-action contact-action--primary">
+            <span class="contact-ico">✉️</span>
+            <div>
+              <span class="contact-label">Email</span>
+              <strong>angemichel.nebie@gmail.com</strong>
+            </div>
+          </a>
+
+          <a href="https://wa.me/2250584615424" target="_blank" rel="noopener" class="contact-action">
+            <span class="contact-ico">💬</span>
+            <div>
+              <span class="contact-label">WhatsApp</span>
+              <strong>+225 05 84 61 54 24</strong>
+            </div>
+          </a>
+
+          <a href="https://github.com/AngeM-Mike" target="_blank" rel="noopener" class="contact-action">
+            <span class="contact-ico">🔗</span>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <strong>github.com/AngeM-Mike</strong>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="brand brand--footer">
+      <span class="brand-mark">NAM</span>
+      <span class="brand-name">Nebie Ange Michel</span>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Nebie Ange Michel. Tous droits réservés.</p>
+    <div class="footer-links">
+      <a href="#home">Accueil</a>
+      <a href="#portfolio">Réalisations</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Image précédente">‹</button>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Image suivante">›</button>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">✕</button>
+  <figure class="lightbox-figure">
+    <img src="" alt="" id="lightboxImg">
+    <figcaption id="lightboxCaption"></figcaption>
+  </figure>
+</div>
+
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
