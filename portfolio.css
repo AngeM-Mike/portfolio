@@ -48,6 +48,7 @@ body {
   background: var(--white);
   -webkit-font-smoothing: antialiased;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 img { max-width: 100%; display: block; }
@@ -630,10 +631,147 @@ code {
 }
 
 @media (max-width: 620px) {
-  .wrap { padding: 0 20px; }
-  .hero { padding-top: 130px; }
-  .hero-inner { padding-bottom: 70px; }
-  .section { padding: 120px 0 70px; }
-  .skill-groups { grid-template-columns: 1fr; }
-  .hero-mark { opacity: 0.35; width: 340px; height: 340px; right: -100px; }
+  .wrap { padding: 0 18px; }
+
+  .site-header {
+    padding: 12px 0;
+  }
+
+  .header-inner {
+    gap: 12px;
+    align-items: center;
+  }
+
+  .brand {
+    min-width: 0;
+    gap: 8px;
+  }
+
+  .brand-mark {
+    min-width: 46px;
+    padding: 7px 9px;
+    font-size: 0.72rem;
+  }
+
+  .brand-name {
+    font-size: clamp(1.1rem, 5vw, 1.75rem);
+    white-space: nowrap;
+  }
+
+  .hero {
+    padding-top: 118px;
+  }
+
+  .hero-inner {
+    padding-bottom: 56px;
+    max-width: 100%;
+  }
+
+  .eyebrow {
+    font-size: 0.66rem;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 13vw, 4rem);
+    line-height: 0.96;
+    max-width: 100%;
+    letter-spacing: -0.04em;
+  }
+
+  .hero-text {
+    font-size: 0.94rem;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-infobar {
+    transform: translateY(18%);
+    padding: 16px 18px;
+    border-radius: 22px;
+    gap: 10px;
+  }
+
+  .info-item {
+    width: 100%;
+  }
+
+  .info-value {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .section {
+    padding: 130px 0 70px;
+  }
+
+  .section-title {
+    font-size: clamp(1.55rem, 7vw, 2.25rem);
+  }
+
+  .section-sub {
+    font-size: 0.95rem;
+    margin-bottom: 36px;
+  }
+
+  .skill-groups {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-mark {
+    opacity: 0.32;
+    width: 320px;
+    height: 320px;
+    right: -100px;
+    top: 110px;
+  }
+
+  .tool-chip {
+    font-size: 0.72rem;
+    padding: 8px 12px;
+  }
+
+  .contact-panel {
+    padding: 18px;
+  }
+
+  .contact-action {
+    gap: 12px;
+    padding: 14px 12px;
+  }
+
+  .contact-action strong {
+    font-size: 0.86rem;
+    line-height: 1.45;
+  }
+
+  .contact-action .contact-label {
+    margin-bottom: 3px;
+  }
+
+  .contact-list li {
+    gap: 10px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
 }
