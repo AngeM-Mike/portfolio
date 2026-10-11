@@ -44,7 +44,39 @@ const projects = [
       "NAYA/icone principale.png",
       "NAYA/Bleu NAYA.png"
     ],
-    tag: "Logo & identité"
+    imageTitles: [
+      "Identité principale",
+      "Panneau de marque",
+      "Déclinaison orange",
+      "Mug personnalisé",
+      "Mini charte graphique",
+      "Tenue de livreur",
+      "Icône d'application",
+      "Icône principale",
+      "Déclinaison bleue"
+    ],
+    tag: "Projet complet · 9 visuels"
+  },
+  {
+    title: "Affiches",
+    category: "affiche",
+    images: [
+      "Affiche/Octobre Rose pour portfolio.jpg.jpeg",
+      "Affiche/nouvelle AFFICHE LUC.jpg",
+      "Affiche/DOP Cover principale.jpg",
+      "Affiche/Affiche nouvel an 2.jpg",
+      "Affiche/Affiche midnight.jpg",
+      "Affiche/AFFICHE JUS AND VIBE.jpg"
+    ],
+    imageTitles: [
+      "Octobre Rose",
+      "Affiche LUC",
+      "DOP · Cover principale",
+      "Affiche du Nouvel An",
+      "Midnight",
+      "Jus and Vibe"
+    ],
+    tag: "6 créations · Communication visuelle"
   },
   {
     title: "Water 5",
@@ -113,16 +145,18 @@ function renderGallery(filter) {
     card.className = "gallery-card";
     card.setAttribute("data-reveal", "");
     const firstImage = project.images && project.images.length ? project.images[0] : "";
+    const actionLabel = project.category === "affiche" ? "Voir les affiches" : "Voir le projet";
     card.innerHTML = `
-      <div class="gallery-media">
+      <div class="gallery-media${project.category === "affiche" ? " gallery-media--poster" : ""}">
         <img src="${encodeURI(firstImage)}" alt="${project.title}" loading="lazy">
       </div>
       <div class="gallery-body">
         <span class="gallery-tag">${project.tag}</span>
         <h3 class="gallery-title">${project.title}</h3>
+        <button class="gallery-open" type="button">${actionLabel}<span aria-hidden="true">&rarr;</span></button>
       </div>
     `;
-    card.addEventListener("click", () => openLightbox(project, 0));
+    card.querySelector(".gallery-open").addEventListener("click", () => openLightbox(project, 0));
     grid.appendChild(card);
   });
 
@@ -280,9 +314,10 @@ function renderLightboxImage() {
   if (!lightbox || !img || !caption || !activeLightboxProject) return;
 
   const imagePath = activeLightboxProject.images[activeLightboxIndex];
+  const imageTitle = activeLightboxProject.imageTitles?.[activeLightboxIndex] || activeLightboxProject.title;
   img.src = encodeURI(imagePath);
-  img.alt = `${activeLightboxProject.title} ${activeLightboxIndex + 1}`;
-  caption.textContent = `${activeLightboxProject.title} — ${activeLightboxProject.tag} (${activeLightboxIndex + 1}/${activeLightboxProject.images.length})`;
+  img.alt = imageTitle;
+  caption.textContent = `${imageTitle} — ${activeLightboxProject.title} (${activeLightboxIndex + 1}/${activeLightboxProject.images.length})`;
 }
 
 function navigateLightbox(direction) {
